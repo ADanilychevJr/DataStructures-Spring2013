@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DList2()
+comment0.text=\r\n\ \ DList2()\ constructor\ for\ an\ empty\ DList2.\r\n
+comment1.params=a
+comment1.target=DList2(Run)
+comment1.text=\r\n\ \ DList2()\ constructor\ for\ a\ one-node\ DList2.\r\n
+comment2.params=i
+comment2.target=void\ insertFront(Run)
+comment2.text=\r\n\ \ insertFront()\ inserts\ an\ item\ at\ the\ front\ of\ a\ DList2.\r\n
+comment3.params=i
+comment3.target=void\ insertEnd(Run)
+comment4.params=i
+comment4.target=DListNode2\ iterate(int)
+comment5.params=i
+comment5.target=void\ insertAfter(int)
+comment6.params=
+comment6.target=void\ removeFront()
+comment6.text=\r\n\ \ removeFront()\ removes\ the\ first\ item\ (and\ first\ non-sentinel\ node)\ from\r\n\ \ a\ DList2.\ \ If\ the\ list\ is\ empty,\ do\ nothing.\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ \ toString()\ returns\ a\ String\ representation\ of\ this\ DList.\r\n\r\n\ \ DO\ NOT\ CHANGE\ THIS\ METHOD.\r\n\r\n\ \ @return\ a\ String\ representation\ of\ this\ DList.\r\n
+numComments=8

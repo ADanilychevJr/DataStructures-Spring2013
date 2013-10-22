@@ -1,0 +1,25 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 cs61b-ho Myles Scolnick\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 cs61b-de Alex Danilychev\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 cs61b-xy David Adams\
+\
+GRADER\
+\
+To store the vertices we created a Vertex object. We stored these objects in a DList and gave each Vertex a reference to the Node that contains it. That way we could removeVertex in O(d) time by removing its edges, each in O(1), 'd' total times and removing the vertex itself in O(1) time. In addition, the objects that are added as vertices are mapped to Vertex objects in a hash table. The Vertex object also contains the object it is representing and its adjacency list. The DList allows us to run getVertices() in O(V).\
+\
+We also did this with an Edge class. The Edge class references both DListNodes they are in and both DList (or one if its a self-edge). This allows us to run removeEdge() in O(1) time. \
+\
+For Kruskal, to get a list of all the edges we looped through the list of Vertices and used the adjacency list to add an edge to the list if the end vertex had not yet been visited. We added Vertices to a hash table once they were visited so we could check in O(1) time. The value for this hash table is a counter that increases by 1 each time a vertex gets added, this maps each Vertex to a consecutive integer to be used for the DisjointSets.\
+\
+Went through the list of edges and added them to an Array size of the number of edges from our list. With this array we used the mergeSort algorithm adjusted for Edge objects to sort them by weight least to greatest. \
+\
+We used DisjointSets and the hash table that maps the Vertices to integers by looping through the list of sorted edges and adding the edge to the table (and union-ing the sets) if the two endpoints of the edge were not already connected (in the same set). \
+\
+The graph that we got after was the minSpanTree by use of Kruskal's algorithm.}

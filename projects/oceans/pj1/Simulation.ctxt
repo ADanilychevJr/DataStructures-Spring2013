@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=graphics\ ocean
+comment0.target=void\ drawOcean(java.awt.Graphics,\ Ocean)
+comment1.params=argv
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ main()\ reads\ the\ parameters\ and\ performs\ the\ simulation\ and\ animation.\r\n
+numComments=2
